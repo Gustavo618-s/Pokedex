@@ -19,6 +19,26 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/styles/global.css" />
+
+    <style>
+      .pagination {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem;
+      }
+      .pagination button {
+        color: #fff;
+        background-color: #6c79db;
+        border: none;
+        border-radius: 1rem;
+        padding: 0.25rem 0.5rem;
+        margin: 0.25rem 0;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <section class="content">
@@ -40,9 +60,13 @@
           </div>
         </li>
       </ol>
+
+      <div class="pagination">
+        <button id="loadMoreButton" type="button">Carregar mais</button>
+      </div>
     </section>
-    <script src="/src/scripts/pokemon-model.js"></script>
-    <script src="/src/scripts/poke-api.js"></script>
-    <script src="/src/scripts/main.js"></script>
+    <script src="/src/scripts/pokemon-model.js" defer></script>
+    <script src="/src/scripts/poke-api.js" defer></script>
+    <script src="/src/scripts/main.js" defer></script>
   </body>
 </html>
